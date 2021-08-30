@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "Menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nazwa": {
+      "type": "string"
+    },
+    "podkategorie": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "menu"
+    },
+    "menu": {
+      "model": "menu",
+      "via": "menus"
+    }
+  }
+}
