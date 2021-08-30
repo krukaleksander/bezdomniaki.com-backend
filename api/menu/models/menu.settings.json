@@ -28,6 +28,9 @@
     "menu": {
       "model": "menu",
       "via": "menus"
+    },
+    "isSingle": {
+      "type": "boolean"
     }
   }
 }
